@@ -82,10 +82,10 @@
 /* Esercizio 9 */
 
 .ex-9-img:hover{
-    animation: roundedInvertedBright 5s;
+    animation: roundedContrastBrightTransform 5s;
 }
 
-@keyframes roundedInvertedBright{
+@keyframes roundedContrastBrightTransform{
     from{
         filter: brightness(100%);
         filter:contrast(100%);

@@ -1,0 +1,223 @@
+
+/* Esercizio 1 */
+
+.ex-1-square:hover {
+    transition: background-color 5s;
+    background-color: red;
+  }
+
+  /* Esercizio 2 */
+
+  .ex-2-square:active{
+    transition: width 5s;
+    width: 100%;
+  }
+
+/* Esercizio 3 */
+
+.ex-3-square:hover{
+    transition: border-radius 3s;
+    border-radius: 50%;
+}
+
+/* Esercizio 4 */
+
+.ex-4-square:hover{
+    transition: opacity 3s;
+    opacity: 0;
+}
+
+/* Esercizo 5 */
+
+.ex-5-square:hover{
+    transform: scale(0.8,0.8);
+}
+
+.ex-5-square:active{
+    transform: scale(1.5,1.5);
+}
+
+/* Esercizio 6 */
+
+.ex-6-img:hover{
+    filter:grayscale(100%);
+}
+
+/* Esercizio 7 */
+
+.ex-7-img:hover{
+    animation: invertedBlackWhite 2s;
+}
+@keyframes invertedBlackWhite{
+    from{
+        filter: grayscale(0%);
+        filter: invert(0%);
+    }
+    to{
+        filter: grayscale(100%);
+        filter: invert(100%);
+    }
+}
+
+/* Esercizio 8 */
+
+.ex-8-img:hover{
+    animation: roundedInvertedBright 5s;
+}
+
+@keyframes roundedInvertedBright{
+    from{
+        filter: brightness(100%);
+        filter:invert(0%);
+        border-radius: 0%;
+    }
+
+    to{
+        filter: brightness(150%);
+        filter:invert(80%);
+        border-radius: 50%;
+    }
+}
+
+/* Esercizio 9 */
+
+.ex-9-img:hover{
+    animation: roundedInvertedBright 5s;
+}
+
+@keyframes roundedInvertedBright{
+    from{
+        filter: brightness(100%);
+        filter:contrast(100%);
+        border-radius: 0%;
+        transform: scale(1,1);
+    }
+
+    to{
+        filter: brightness(70%);
+        filter:contrast(150%);
+        border-radius: 50%;
+        transform: scale(1.5,1.5);
+    }
+}
+
+/* Esercizio 10 */
+
+.ex-10-icon{
+    animation: rotation 4s linear infinite;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Esercizio 11 */
+
+.ex-11-icon{
+    animation: rotation 4s linear infinite;
+}
+
+.ex-11-icon:hover{
+    animation: rotation3_4Back 4s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotation3_4Back{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(270deg);
+    }
+}
+
+/* Esercizio 12 */
+
+.ex-12-top-white{
+    animation: topWhiteForwards 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes topWhiteForwards{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(75px);
+    }
+}
+
+.ex-12-bottom-white{
+    animation: bottomWhiteBackwards 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bottomWhiteBackwards{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-75px);
+    }
+}
+
+/* Esercizio 13 */
+
+.ex-13-top-white{
+    animation: moveAroundTop 5s linear infinite;
+}
+
+@keyframes moveAroundTop{
+    0%{
+        top: calc(0% - 10px);
+        left: calc(0% - 10px);
+    }
+    25%{
+        top: calc(0% - 10px);
+        left: calc(100% - 30px);
+    }
+    50%{
+        top: calc(100%);
+        left: calc(100% - 30px);
+    }
+    75%{
+        top: 100%;
+        left: calc(0% - 30px);
+    }
+    100%{
+        top: calc(0% - 10px);
+        left: calc(0% - 10px);
+    }
+}
+
+.ex-13-bottom-white{
+    animation: moveAroundBottom 5s linear infinite;
+}
+
+@keyframes moveAroundBottom{
+    0%{
+        top: calc(100%);
+        left: calc(100% - 30px);
+    }
+    25%{
+        top: 100%;
+        left: calc(0% - 10px);
+    }
+    50%{
+        top: calc(0% - 10px);
+        left: calc(0% - 10px);
+    }
+    75%{
+        top: calc(0% - 10px);
+        left: calc(100% - 30px);
+    }
+    100%{
+        top: calc(100%);
+        left: calc(100% - 30px);
+    }
+}

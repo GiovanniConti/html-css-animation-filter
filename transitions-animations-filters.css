@@ -124,15 +124,18 @@
 
 .ex-11-icon:hover{
     animation: rotation3_4Back 4s linear infinite;
-    animation-direction: alternate;
 }
 
 @keyframes rotation3_4Back{
-    from{
+    0%{
         transform: rotate(0deg);
     }
-    to{
+    80%{
         transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
     }
 }
 

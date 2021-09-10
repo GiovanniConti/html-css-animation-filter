@@ -30,12 +30,12 @@
 /* Esercizo 5 */
 
 .ex-5-square:hover{
+    transform: scale(1.5,1.5);
+}
+.ex-5-square:active{
     transform: scale(0.8,0.8);
 }
 
-.ex-5-square:active{
-    transform: scale(1.5,1.5);
-}
 
 /* Esercizio 6 */
 
